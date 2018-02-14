@@ -61,7 +61,7 @@ namespace PdfSharp.Xps.Rendering
       if (alpha < 1 && this.writer.renderMode == RenderMode.Default)
       {
 #if true
-        PdfExtGState extGState = this.writer.Owner.ExtGStateTable.GetExtGStateNonStroke(alpha);
+        PdfExtGState extGState = this.writer.Owner.ExtGStateTable.GetExtGStateNonStroke(alpha, false);
         string gs = this.writer.Resources.AddExtGState(extGState);
         this.writer.WriteLiteral("{0} gs\n", gs);
 #else
@@ -205,7 +205,7 @@ namespace PdfSharp.Xps.Rendering
       if (alpha < 1)
       {
 #if true
-        PdfExtGState extGState = this.writer.Owner.ExtGStateTable.GetExtGStateNonStroke(alpha);
+        PdfExtGState extGState = this.writer.Owner.ExtGStateTable.GetExtGStateNonStroke(alpha, false);
         string gs = this.writer.Resources.AddExtGState(extGState);
         this.writer.WriteLiteral("{0} gs\n", gs);
 #else

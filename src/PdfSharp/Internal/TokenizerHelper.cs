@@ -255,5 +255,10 @@ namespace Edf.Internal
         char _quoteChar;
         string _str;
         int _strLen;
+
+        public char PeekNextCharacter()
+        {
+            return _str[_charIndex];
+        }
     }
 }
