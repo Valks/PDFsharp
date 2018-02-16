@@ -83,7 +83,7 @@ namespace PdfSharp.Fonts.OpenType
         {
             try
             {
-                FontFace = new OpenTypeFontface(fontData, idName);
+                FontFace = XFontSource.GetOrCreateFrom(fontData).Fontface;
                 // Try to get real name form name table
                 if (idName.Contains("XPS-Font-") && FontFace.name != null && FontFace.name.Name.Length != 0)
                 {
