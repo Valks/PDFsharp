@@ -10,7 +10,7 @@ namespace PdfSharp.Xps.XpsModel
   /// <summary>
   /// Contains a set of <PathFigure> elements.
   /// </summary>
-  class PathGeometry : XpsElement
+  public class PathGeometry : XpsElement
   {
     //PathGeometry()
     //{

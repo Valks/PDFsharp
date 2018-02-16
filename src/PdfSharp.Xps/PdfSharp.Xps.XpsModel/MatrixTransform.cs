@@ -8,7 +8,7 @@ namespace PdfSharp.Xps.XpsModel
   /// Creates an arbitrary affine matrix transformation that manipulates objects or coordinate systems
   /// in a two-dimensional plane.
   /// </summary>
-  class MatrixTransform : XpsElement
+  public class MatrixTransform : XpsElement
   {
     internal MatrixTransform()
     {

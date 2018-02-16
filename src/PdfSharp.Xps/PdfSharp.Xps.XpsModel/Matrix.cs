@@ -10,7 +10,7 @@ namespace PdfSharp.Xps.XpsModel
   /// <summary>
   /// Represents a transformation matrix.
   /// </summary>
-  struct Matrix
+  public struct Matrix
   {
     public Matrix(double m11, double m12, double m21, double m22, double offsetX, double offsetY)
     {

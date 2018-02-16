@@ -94,7 +94,7 @@ namespace PdfSharp.Xps.XpsModel
     /// <summary>
     /// A collection of Path, Glyphs, and Canvas objects.
     /// </summary>
-    internal XpsElementCollection Content = new XpsElementCollection();
+    public XpsElementCollection Content = new XpsElementCollection();
 
     /// <summary>
     /// Specifies the default language used for the current element and for any child or descendant

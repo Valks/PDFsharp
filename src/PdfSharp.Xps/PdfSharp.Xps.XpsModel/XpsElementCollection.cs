@@ -7,7 +7,7 @@ namespace PdfSharp.Xps.XpsModel
   /// <summary>
   /// Represents a collection of XpsElement objecs.
   /// </summary>
-  class XpsElementCollection : List<XpsElement>
+  public class XpsElementCollection : List<XpsElement>
   {
     // Currently just a placeholder of a generic list.
   }

@@ -107,8 +107,7 @@ namespace PdfSharp.Xps
 
         // ZipPackage pack = ZipPackage.Open(xpsFilename) as ZipPackage;
         Uri uri = new Uri("/Documents/1/Pages/1.fpage", UriKind.Relative);
-        ZipPackagePart part = this.xpsDocument.Package.GetPart(uri) as ZipPackagePart;
-        if (part != null)
+          if (this.xpsDocument.Package.GetPart(uri) is ZipPackagePart part)
         {
           using (Stream stream = part.GetStream())
           using (StreamReader sr = new StreamReader(stream))

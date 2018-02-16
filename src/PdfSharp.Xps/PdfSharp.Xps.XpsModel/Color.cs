@@ -10,7 +10,7 @@ using PdfSharp.Xps.Rendering;
 
 namespace PdfSharp.Xps.XpsModel
 {
-  struct Color
+    public struct Color
   {
     public byte A
     {

@@ -258,7 +258,10 @@ namespace Edf.Internal
 
         public char PeekNextCharacter()
         {
-            return _str[_charIndex];
+            if (_charIndex >= _strLen)
+                return 'X';
+            char ch = _str[_charIndex];
+            return ch;
         }
     }
 }

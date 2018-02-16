@@ -12,7 +12,7 @@ namespace PdfSharp.Xps.Rendering
   /// <summary>
   /// Keeps track of the already created PDF objects.
   /// </summary>
-  class DocumentRenderingContext
+  public class DocumentRenderingContext
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="DocumentRenderingContext"/> class.

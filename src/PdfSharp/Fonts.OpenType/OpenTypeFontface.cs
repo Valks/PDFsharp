@@ -100,9 +100,7 @@ namespace PdfSharp.Fonts.OpenType
         {
             _fullFaceName = faceName;
             // Always save a copy of the font bytes.
-            int length = data.Length;
-            //FontSource = new XFontSource(faceName, new byte[length]);
-            Array.Copy(data, FontSource.Bytes, length);
+            FontSource = XFontSource.GetOrCreateFrom(data);
             Read();
         }
 

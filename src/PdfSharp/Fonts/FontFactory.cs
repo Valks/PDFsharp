@@ -309,7 +309,15 @@ namespace PdfSharp.Fonts
                     fontSource.Fontface = new OpenTypeFontface(fontSource);
                 }
                 FontSourcesByKey.Add(fontSource.Key, fontSource);
-                FontSourcesByName.Add(fontSource.FontName, fontSource);
+                if (FontSourcesByName.ContainsKey(fontSource.FontName))
+                {
+                    // TODO: merge font faces?..
+                }
+                else
+                {
+                    FontSourcesByName.Add(fontSource.FontName, fontSource);
+                }
+
                 return fontSource;
             }
             finally { Lock.ExitFontFactory(); }

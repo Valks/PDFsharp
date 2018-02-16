@@ -315,7 +315,7 @@ namespace PdfSharp.Pdf
         /// <summary>
         /// The content stream currently used by an XGraphics object for rendering.
         /// </summary>
-        internal PdfContent RenderContent;
+        internal PdfContent RenderContent { get; set; }
 
         /// <summary>
         /// Gets the array of content streams of the page.

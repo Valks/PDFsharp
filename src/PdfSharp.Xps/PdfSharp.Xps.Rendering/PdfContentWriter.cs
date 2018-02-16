@@ -18,7 +18,7 @@ namespace PdfSharp.Xps.Rendering
   /// <summary>
   /// Provides the funtionality to write a PDF content stream for a PdfPage or an XForm.
   /// </summary>
-  partial class PdfContentWriter
+  public partial class PdfContentWriter
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="PdfContentWriter"/> class

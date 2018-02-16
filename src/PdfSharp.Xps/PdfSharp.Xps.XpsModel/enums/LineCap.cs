@@ -2,7 +2,7 @@
 
 namespace PdfSharp.Xps.XpsModel
 {
-  enum LineCap
+    public enum LineCap
   {
     Flat,
     Round,
